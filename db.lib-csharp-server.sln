@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dBridges", "src\dBridges.csproj", "{329B5EAE-0BB0-4117-9306-A43E839A03E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{329B5EAE-0BB0-4117-9306-A43E839A03E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{329B5EAE-0BB0-4117-9306-A43E839A03E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{329B5EAE-0BB0-4117-9306-A43E839A03E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{329B5EAE-0BB0-4117-9306-A43E839A03E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3DACAD2E-D426-4211-86E5-F3AC8E37603F}
+	EndGlobalSection
+EndGlobal
