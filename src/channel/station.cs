@@ -279,30 +279,37 @@ namespace dBridges.channel
 
         private bool isvalidSyntex(string name)
         {
-            Regex rgx = new Regex("^[a-zA-Z0-9.:_*]+$");
+            Regex rgx = new Regex("^[a-zA-Z0-9.:_-]+$");
             return rgx.IsMatch(name);
         }
+
+
+
         private bool validateSyntax(string name , int valid_type = 0)
         {
-            if (!isvalidSyntex(name))
+            if (name != "sys:*")
             {
-                switch (valid_type)
+
+                if (!isvalidSyntex(name))
                 {
-                    case 0:
-                        throw (new dBError("E028"));
+                    switch (valid_type)
+                    {
+                        case 0:
+                            throw (new dBError("E028"));
 
-                    case 1:
-                        throw (new dBError("E030"));
+                        case 1:
+                            throw (new dBError("E030"));
 
-                    case 2:
-                        throw (new dBError("E015"));
+                        case 2:
+                            throw (new dBError("E015"));
 
-                    case 3:
-                        throw (new dBError("E023"));
+                        case 3:
+                            throw (new dBError("E023"));
 
-                    case 4:
-                        throw (new dBError("E039"));
+                        case 4:
+                            throw (new dBError("E039"));
 
+                    }
                 }
             }
                 return true;

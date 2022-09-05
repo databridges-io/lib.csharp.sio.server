@@ -126,7 +126,7 @@ namespace dBridges.remoteprocedure
 
         private bool isvalidSyntex(string name)
         {
-            Regex rgx = new Regex("^[a-zA-Z0-9.:_*]+$");
+            Regex rgx = new Regex("^[a-zA-Z0-9.:_-]+$");
             return rgx.IsMatch(name);
         }
         private bool validateSyntax(string name, int valid_type = 0)
