@@ -110,7 +110,7 @@ namespace dBridges.exceptions
                     }
                     else
                     {
-                        this.code = code;
+                        this.code = this.code + code;
                     }
                 }
             }
